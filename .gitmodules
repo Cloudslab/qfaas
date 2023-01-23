@@ -1,0 +1,3 @@
+[submodule "qfaas-ui"]
+	path = qfaas-ui
+	url = https://github.com/Cloudslab/qfaas-ui.git
