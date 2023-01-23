@@ -1,0 +1,87 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: https://gw.qfaas.cloud
+functions:
+  ### Qiskit ###
+  # Qiskit HTTP - using of-watchdog
+  # Quantum random number generator
+  # QRNG run on IBM Quantum computer
+  # Shor Algorithm
+  qiskit-qrng-v2:
+    lang: qiskit
+    handler: ./qiskit-qrng-v2
+    image: quantumdev/qiskit-qrng-v2:latest
+    environment:
+      read_timeout: 5m
+      write_timeout: 5m
+      exec_timeout: 5m
+    limits:
+      cpu: "1000m"
+      memory: "512MB"
+    requests:
+      cpu: "500m"
+      memory: "256MB"
+    labels:
+      com.openfaas.scale.max: 2
+      com.openfaas.scale.min: 2
+      com.openfaas.scale.zero: false
+
+  cirq-qrng-v2:
+    lang: cirq
+    handler: ./cirq-qrng-v2
+    image: quantumdev/cirq-qrng-v2:latest
+    environment:
+      read_timeout: 5m
+      write_timeout: 5m
+      exec_timeout: 5m
+
+  qsharp-qrng-v2:
+    lang: qsharp
+    handler: ./qsharp-qrng-v2
+    image: quantumdev/qsharp-qrng-v2:latest
+    environment:
+      read_timeout: 5m
+      write_timeout: 5m
+      exec_timeout: 5m
+
+  braket-qrng-v2:
+    lang: braket
+    handler: ./braket-qrng-v2
+    image: quantumdev/braket-qrng-v2:latest
+    environment:
+      read_timeout: 5m
+      write_timeout: 5m
+      exec_timeout: 5m
+
+  qiskit-random-generator:
+    lang: qiskit
+    handler: ./qiskit-random-generator
+    image: quantumdev/qiskit-random-generator:latest
+    environment:
+      read_timeout: 5m
+      write_timeout: 5m
+      exec_timeout: 5m
+
+  cirq-random-generator:
+    lang: cirq
+    handler: ./cirq-random-generator
+    image: quantumdev/cirq-random-generator:latest
+    environment:
+      read_timeout: 5m
+      write_timeout: 5m
+      exec_timeout: 5m
+
+  qiskit-shor:
+    lang: qiskit
+    handler: ./qiskit-shor
+    image: quantumdev/qiskit-shor:latest
+    environment:
+      read_timeout: 5m
+      write_timeout: 5m
+      exec_timeout: 5m
+  qiskit-qiskit-qrng:
+    lang: qiskit
+    handler: ./qiskit-qiskit-qrng
+    image: quantumdev/qiskit-qiskit-qrng:latest
+
