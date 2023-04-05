@@ -1,3 +1,6 @@
 [submodule "qfaas-ui"]
 	path = qfaas-ui
 	url = https://github.com/hoaiocom/qfaas-ui
+[submodule "qfaas-lib"]
+	path = qfaas-lib
+	url = https://github.com/hoaiocom/qfaas-lib
