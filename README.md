@@ -8,12 +8,14 @@ QFaaS is a Quantum Function-as-a-Service framework that leverages the advantages
 - Simplify quantum programming and enable hybrid quantum-classical function development with built-in Python library.
 - Execute quantum functions on both internal quantum simulators and external quantum computers/simulators from IBM Quantum and Strangeworks Quantum Computing platforms (Amazon Braket).
 
+![QFaaS UI](docs/images/qfaas-ui.jpg "QFaaS Web UI")
+
 
 ### QFaaS Architecture 
 The architecture design of QFaaS comprises six main components: the QFaaS APIs and API Gateway, the Application Deployment Layer, the Classical Cloud Layer, the Quantum Cloud Layer, the Monitoring Layer, and the User Interface. 
 
 ![QFaaS Architecture](docs/images/qfaas-architecture.jpg "QFaaS Architecture")
-![QFaaS UI](docs/images/qfaas-ui.jpg "QFaaS Web UI")
+
 
 ### Deployment Guide
 TBA
