@@ -1,0 +1,2 @@
+language: qsharp
+fprocess: python index.py

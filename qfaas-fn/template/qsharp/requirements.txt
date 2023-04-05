@@ -1,0 +1,4 @@
+flask
+waitress
+tox==3.*
+qsharp
