@@ -29,7 +29,7 @@ Please make sure to update tests as appropriate.
 
 
 ### Reference
-- H. T. Nguyen, M. Usman, and R. Buyya, “QFaaS: A Serverless Function-as-a-Service Framework for Quantum Computing.” arXiv, May 30, 2022. Accessed: Aug. 29, 2022. [Online]. Available: http://arxiv.org/abs/2205.14845
+- Hoa T. Nguyen, M. Usman, and R. Buyya, “QFaaS: A Serverless Function-as-a-Service Framework for Quantum Computing.” arXiv, May 30, 2022 [Online]. Available: http://arxiv.org/abs/2205.14845
 
 ## License
 
