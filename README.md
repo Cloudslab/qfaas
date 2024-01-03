@@ -17,9 +17,6 @@ The architecture design of QFaaS comprises six main components: the QFaaS APIs a
 ![QFaaS Architecture](docs/images/qfaas-architecture.jpg "QFaaS Architecture")
 
 
-### Deployment Guide
-TBA
-
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first
