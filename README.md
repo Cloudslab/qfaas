@@ -30,6 +30,8 @@ Please make sure to update tests as appropriate.
 
 ### Reference
 [1] Hoa T. Nguyen, Muhammad Usman, and Rajkumar Buyya, “QFaaS: A Serverless Function-as-a-Service framework for Quantum computing,” Future Generation Computer Systems, vol. 154. Elsevier BV, pp. 281–300, May 2024. doi: 10.1016/j.future.2024.01.018. Available: [http://dx.doi.org/10.1016/j.future.2024.01.018](http://dx.doi.org/10.1016/j.future.2024.01.018)
+
+
 **BibTeX entry**
 ```
 @article{nguyen2024qfaas,
