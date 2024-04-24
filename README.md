@@ -1,11 +1,14 @@
-# QFaaS: A Quantum Function-as-a-Service Framework
+# QFaaS: A Quantum Function-as-a-Service Framework ![Project Status](https://img.shields.io/badge/Project-Beta%20Release-yellow) 
 
 QFaaS is a Quantum Function-as-a-Service framework that leverages the advantages of the serverless computing model and state-of-the-art software engineering techniques to advance practical quantum computing in the Noisy Intermediate-Scale Quantum (NISQ) era. Our framework provides essential elements of a serverless quantum system to streamline service-oriented quantum application development in cloud environments, such as combining hybrid quantum-classical computation, automating the backend selection, and adapting Quantum DevOps workflow. QFaaS offers the first full-stack and unified quantum serverless platform by integrating multiple well-known quantum software development kits, quantum simulators, and quantum cloud providers (IBM Quantum and Amazon Braket).
+
+> [!NOTE]  
+> _We are working on a book chapter and documentation for developing and deploying quantum service-oriented applications using the QFaaS framework, tentatively realeasing in May-June, 2024. Please stay tune for further updates._
 
 ### Highlights
 - Support developing quantum functions using 4 popular quantum SDKs, including Qiskit, Q#, Cirq, and Braket.
 - Built-in APIs with API gateway to manage system components, quantum functions, jobs, quantum backend and providers.
-- Simplify quantum programming and enable hybrid quantum-classical function development with built-in Python library.
+- Simplify quantum programming and enable hybrid quantum-classical function development with a built-in Python library.
 - Execute quantum functions on both internal quantum simulators and external quantum computers/simulators from IBM Quantum and Strangeworks Quantum Computing platforms (Amazon Braket).
 
 ![QFaaS UI](docs/images/qfaas-ui.jpg "QFaaS Web UI")
