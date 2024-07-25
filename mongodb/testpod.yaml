@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mongodb-test
+  namespace: qfaas
+spec:
+  containers:
+  - name: mongodb-client
+    image: mongo
+    command: ["sleep", "3600"]
+  restartPolicy: Never

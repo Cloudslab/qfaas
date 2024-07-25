@@ -22,7 +22,6 @@ __pycache__/
 *.so
 
 # K8s 
-kubernetes/
 openfaas/
 .kube/
 config
