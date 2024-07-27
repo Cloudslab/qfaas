@@ -1,0 +1,32 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: qfaas-core
+  namespace: qfaas
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: qfaas-core
+  template:
+    metadata:
+      labels:
+        app: qfaas-core
+    spec:
+      containers:
+        - name: qfaas-core
+          image: quantumdev/qfaas-core-2024:latest
+          resources:
+            limits:
+              cpu: "1000m"
+              memory: "1Gi"
+            requests:
+              cpu: "500m"
+              memory: "250Mi"
+          ports:
+            - containerPort: 5000
+          imagePullPolicy: Always
+          envFrom:
+            - secretRef:
+              name: env-secret
