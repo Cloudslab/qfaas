@@ -1,9 +1,11 @@
-[{
-  "username": "qfaas",
-  "role": "admin",
-  "currentToken": "",
-  "disabled": null,
-  "providerToken": null,
-  "hashedPassword": "$2b$12$DSgu8/q5Wb2UNEo/fFLTquqsajfTerZpayYM.ZiADBmV/e.25zey2",
-  "displayName": "QFaaS Admin"
-}]
+[
+  {
+    "username": "qfaas",
+    "role": "admin",
+    "currentToken": "",
+    "disabled": null,
+    "providerToken": null,
+    "hashedPassword": "$2b$12$DSgu8/q5Wb2UNEo/fFLTquqsajfTerZpayYM.ZiADBmV/e.25zey2",
+    "displayName": "QFaaS Admin"
+  }
+]

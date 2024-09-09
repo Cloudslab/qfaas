@@ -1,4 +1,3 @@
----
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -16,7 +15,7 @@ spec:
     spec:
       containers:
         - name: qfaas-core
-          image: quantumdev/qfaas-core-2024:latest
+          image: quantumdev/qfaas-v1.2:latest
           resources:
             limits:
               cpu: "1000m"
@@ -29,4 +28,4 @@ spec:
           imagePullPolicy: Always
           envFrom:
             - secretRef:
-              name: env-secret
+                name: env-secret

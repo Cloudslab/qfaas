@@ -1,5 +1,5 @@
-import strangeworks
-from strangeworks.braket import get_backends, run_circuit, get_circuit_results
+# import strangeworks
+# from strangeworks.braket import get_backends, run_circuit, get_circuit_results
 from qfaas.database.dbProvider import retrieve_provider
 from qfaas.utils.logger import logger
 from qfaas.models.backend import BraketSWBackendSchema
@@ -72,42 +72,44 @@ braketBackends = [
 ]
 
 def initialize_SWProvider(swUser, providerToken):
-    try:
-        logger.info("Authenticate Strangeworks account with username: " + str(swUser))
-        strangeworks.authenticate(username=swUser, api_key=providerToken)
-    except Exception as ex:
-        logger.warning(ex)
-        return False
+    # try:
+    #     logger.info("Authenticate Strangeworks account with username: " + str(swUser))
+    #     # strangeworks.authenticate(username=swUser, api_key=providerToken)
+    # except Exception as ex:
+    #     logger.warning(ex)
+    #     return False
+    pass
 
 async def get_braketsw_backends(user) -> list:
-    backendList = []
-    username = user['username']
-    providerInfo = await retrieve_provider(username, 'braket-sw')
-    providerToken = providerInfo['providerToken']
-    swUser = providerInfo['additionalInfo']['swUser']
-    initialize_SWProvider(swUser, providerToken)
-    if swUser:
-        for backend in get_backends():
-            print(backend)
-            currentBk = next((item for item in braketBackends if item["name"] == backend), None)
-            if currentBk:
-                backendList.append(
-                    BraketSWBackendSchema(
-                        name=currentBk.get("name"),
-                        type=currentBk.get("type"),
-                        qubit=currentBk.get("qubit"),
-                        user=user['username'],
-                        active=currentBk.get("status"),
-                        sdk="braket",
-                        backendInfo={
-                            "swUser": swUser,
-                            "basis_gates": str(currentBk.get("supported_gates")),
-                            "vendor": currentBk.get("vendor"),
-                            "aws_region": currentBk.get("region"),
-                            "last_updated": str(datetime.now())
-                        }
-                )
-                )
-    return backendList
+    # backendList = []
+    # username = user['username']
+    # providerInfo = await retrieve_provider(username, 'braket-sw')
+    # providerToken = providerInfo['providerToken']
+    # swUser = providerInfo['additionalInfo']['swUser']
+    # initialize_SWProvider(swUser, providerToken)
+    # if swUser:
+    #     for backend in get_backends():
+    #         print(backend)
+    #         currentBk = next((item for item in braketBackends if item["name"] == backend), None)
+    #         if currentBk:
+    #             backendList.append(
+    #                 BraketSWBackendSchema(
+    #                     name=currentBk.get("name"),
+    #                     type=currentBk.get("type"),
+    #                     qubit=currentBk.get("qubit"),
+    #                     user=user['username'],
+    #                     active=currentBk.get("status"),
+    #                     sdk="braket",
+    #                     backendInfo={
+    #                         "swUser": swUser,
+    #                         "basis_gates": str(currentBk.get("supported_gates")),
+    #                         "vendor": currentBk.get("vendor"),
+    #                         "aws_region": currentBk.get("region"),
+    #                         "last_updated": str(datetime.now())
+    #                     }
+    #             )
+    #             )
+    # return backendList
+    pass
     
     
